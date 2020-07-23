@@ -266,6 +266,16 @@ p{
   padding-top:80px;
 }
 
+.second-img {
+  background-image: url(images/header1.jpg);
+  background-attachment: scroll;
+  max-width: 991px;
+  width: 100%;
+  background-position: center;
+  height: 400px;
+}
+
+
 }
 
 @media all and (max-width:767px){
@@ -280,13 +290,8 @@ h1{
 .h-main{
   padding-top:50px;
 }
- 
- .second-img {
-  background-image: url(images/header1.jpg);
-  background-attachment: scroll;
-  max-width: 767px;
-  width: 100%;
-  background-position: center;
+
+.second-img {
   height: 200px;
 }
 
