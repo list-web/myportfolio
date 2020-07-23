@@ -280,5 +280,15 @@ h1{
 .h-main{
   padding-top:50px;
 }
+ 
+ .second-img {
+  background-image: url(images/header1.jpg);
+  background-attachment: scroll;
+  max-width: 767px;
+  width: 100%;
+  background-position: center;
+  height: 200px;
+}
+
 
 }
