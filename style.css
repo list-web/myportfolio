@@ -123,6 +123,7 @@ h2::after{
 
 .second-img {
   background-image: url(images/header1.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 500px;
