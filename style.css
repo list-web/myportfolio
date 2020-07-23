@@ -123,8 +123,8 @@ h2::after{
 
 .second-img {
   background-image: url(images/header1.jpg);
-  background-size: cover;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   height: 500px;
 }
@@ -269,6 +269,7 @@ p{
 }
 
 @media all and (max-width:767px){
+
 
 h1{
   font-size: 35px;
