@@ -148,7 +148,7 @@ label{
   bottom: 0;
   margin: auto;
   width: 70vw;
-  height: 80vh;
+  height: 50vh;
   overflow-y: scroll;
   z-index: 100;
 }
@@ -208,7 +208,7 @@ label{
 
 /* ポップアップの内容 */
 .popup-content{
-  margin: 40px auto 40px auto;
+  margin: 10px auto;
   width: 90%;
 }
 
