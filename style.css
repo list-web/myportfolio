@@ -143,6 +143,9 @@ h2::after{
   transition: 0.5s;
 }
 
+.c-mainbtn:hover{
+  background: white;
+}
 
 footer{
   font-size: 10px;
