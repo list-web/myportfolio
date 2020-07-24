@@ -147,6 +147,14 @@ h2::after{
   background: white;
 }
 
+.c-form{
+  width: 400px;
+}
+
+.form3{
+  height: 200px;
+}
+
 footer{
   font-size: 10px;
 }
@@ -199,6 +207,7 @@ p{
 }
 
 
+
 }
 
 @media all and (max-width:767px){
@@ -218,5 +227,8 @@ h1{
   height: 200px;
 }
 
+.c-form{
+  width: 280px;
+}
 
 }
