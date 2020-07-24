@@ -18,6 +18,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+     
 
    </head>
    <body>
@@ -309,7 +311,39 @@
         <p>制作のご依頼やご相談などは <br>
           お気軽に下記よりご連絡ください。</p>
         </div>
-          <a href="contact.css" class="btn btn-red h-mainbtn c-mainbtn">Contact</a>
+
+      <!-- form -->
+          <form class="formrun" action="https://form.run/api/v1/r/4lt2sh3kwfi0dhsfkmh9oawc" method="post">
+            <!-- ↓自由に要素を追加・編集することができます -->
+            <div>
+              <label>お名前 [必須]</label><br>
+              <input name="お名前" class="c-form" type="text" data-formrun-required >
+              <div data-formrun-show-if-error="お名前" >お名前欄を入力してください</div>
+            </div>
+
+            <div>
+              <label>メールアドレス [必須]</label><br>
+              <input name="メールアドレス" class="c-form" type="text" data-formrun-type="email" data-formrun-required>
+              <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+            </div>
+
+            <div>
+              <label>お問い合わせ内容 [必須]</label><br>
+              <textarea name="お問い合わせ" class="c-form form3" data-formrun-required></textarea>
+              <div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
+            </div>
+
+
+            <!-- ボット投稿をブロックするためのタグ -->
+            <div class="_formrun_gotcha">
+              <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+              <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+              <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+            </div>
+                <br>
+            <button type="submit" class="btn btn-red h-mainbtn c-mainbtn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+          </form>
+
 
       </section>
 
